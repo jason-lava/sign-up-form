@@ -100,13 +100,18 @@ a {
     font-weight: bold;
 }
 
-.signup input {
+input {
     color: #fff;
 }
 
-.signup input:valid {
+input:valid {
     color: #fff;
     border: 1px solid greenyellow;
+}
+
+input:invalid {
+    color: #fff;
+    border: 1px dotted red;
 }
 
 button {
