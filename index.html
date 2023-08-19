@@ -29,13 +29,13 @@
                             <label for='firstName'>FIRST NAME</label>
                         </div>
                         <div>
-                            <input type='text' id='firstName' name='firstName' placeholder='Rafael' required='required'>
+                            <input type='text' id='firstName' name='firstName' placeholder='Rafael' required>
                         </div>
                         <div>
-                            <label for='email'>EMAIL</label>
+                            <label for='lastName'>LAST NAME</label>
                         </div>
                         <div>
-                            <input type='email' id='email' name='email' placeholder='eatMore@pizza.com' required='required'>
+                            <input type='text' id='lastName' name='lastName' placeholder='Esposito' required>
                         </div>
                         <div>
                             <label for='password'>
@@ -46,21 +46,21 @@
                             </label>
                         </div>
                         <div>
-                            <input type='password' id='password' name='password' placeholder='********' minlength=8 required='required'>
+                            <input type='password' id='password' name='password' placeholder='********' minlength=8 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$' oninput="passwordMatch()" required>
                         </div>
                     </div>
                     <div class='column2signup'>
                         <div>
-                            <label for='lastName'>LAST NAME</label>
+                            <label for='email'>EMAIL</label>
                         </div>
                         <div>
-                            <input type='text' id='lastName' name='lastName' placeholder='Esposito' required='required'>
+                            <input type='email' id='email' name='email' placeholder='eatMore@pizza.com' required>
                         </div>
                         <div>
                             <label for='tel'>TELEPHONE (only #'s allowed)</label>
                         </div>
                         <div>
-                            <input type='tel' id='tel' name='tel' placeholder='333-333-4444' minlength=10 maxlength=10 required='required'>
+                            <input type='tel' id='tel' name='tel' placeholder='333-333-4444' minlength=10 maxlength=10 required>
                         </div>
                         <div>
                             <label for='confirmPassword'>
@@ -71,12 +71,12 @@
                             </label>
                         </div>
                         <div>
-                            <input type='password' id='confirmPassword' name='confirmPassword' placeholder='********' minlength=8 required='required'>
+                            <input type='password' id='confirmPassword' name='confirmPassword' placeholder='********' minlength=8 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$' oninput="passwordMatch()" required>
                         </div>
                     </div>
                 </div>
                 <div class='createAccount'>
-                    <button type='' id='createAccount' name='createAccount'>Create Account</button>
+                    <button type='' id='createAccount' name='createAccount''>Create Account</button>
                     <div>Already have an account?
                         <a href="">Login here</a>
                     </div>
